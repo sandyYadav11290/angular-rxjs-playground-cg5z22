@@ -21,7 +21,5 @@ export class AppComponent {
 
   myEvent$ = this._appDataService.myEvent;
 
-  private init$: Observable<any>;
-
   public ngOnInit() {}
 }
