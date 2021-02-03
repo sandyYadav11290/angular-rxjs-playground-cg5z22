@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<table>
+	<tr *ngFor="let data of myData1$ | async">
+		<td>
+			{{data}}
+		</td>
+	</tr>
+	<tr *ngFor="let data of myData2$ | async">
+		<td>
+			{{data}}
+		</td>
+	</tr>
+</table>
+
+<button (click)="myEvent$.next(true)">Add 5 to data 1</button>
